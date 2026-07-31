@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #eef2f6 0%, #dfe7f0 100%);
+  --blue-primary: #2563eb;
+  --neumorphic-light-shadow: -6px -6px 14px rgba(255, 255, 255, 0.9), 6px 6px 14px rgba(163, 177, 198, 0.4);
+  --neumorphic-inset-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.9), inset 4px 4px 10px rgba(163, 177, 198, 0.3);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+}
+
+/* Beautiful Neumorphic cards */
+.neo-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  box-shadow: var(--neumorphic-light-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.95), 8px 8px 20px rgba(163, 177, 198, 0.5);
+}
+
+/* Soft Neumorphic interactive switches and inputs */
+.neo-input {
+  background: rgba(240, 244, 248, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: var(--neumorphic-inset-shadow);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.neo-input:focus {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--neumorphic-light-shadow);
+  border-color: var(--blue-primary);
+}
+
+/* Rounded neomorphic soft buttons */
+.neo-btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border-radius: 18px;
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.5), 4px 4px 10px rgba(37, 99, 235, 0.3);
+  transition: all 0.2s ease;
+}
+
+.neo-btn-primary:hover {
+  filter: brightness(1.05);
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.6), 6px 6px 14px rgba(37, 99, 235, 0.4);
+  transform: translateY(-1px);
+}
+
+.neo-btn-primary:active {
+  transform: translateY(0);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.neo-btn-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  box-shadow: var(--neumorphic-light-shadow);
+  transition: all 0.2s ease;
+}
+
+.neo-btn-secondary:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.95), 8px 8px 16px rgba(163, 177, 198, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Glassmorphism overlays */
+.glass-overlay {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
