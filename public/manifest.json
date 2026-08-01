@@ -1,6 +1,6 @@
 {
-  "short_name": "Nexela",
-  "name": "Nexela Savings SaaS PWA",
+  "short_name": "Nexela Saver",
+  "name": "Nexela Saver Savings SaaS PWA",
   "icons": [
     {
       "src": "/vite.svg",

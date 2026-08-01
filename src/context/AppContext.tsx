@@ -149,7 +149,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return saved ? JSON.parse(saved) : [
       {
         id: 'n1',
-        title: 'Welcome to Nexela!',
+        title: 'Welcome to Nexela Saver!',
         content: 'Your secure Progressive Web App for multi-tenant community savings groups is ready.',
         timestamp: new Date().toISOString(),
         read: false
@@ -291,7 +291,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setUsers(prev => [...prev, newUser]);
     setCurrentUser(newUser);
     logAction(newUser.id, newUser.fullName, 'User Signup', `Registered a new tenant account with role: ${role}`);
-    addNotification('Account Created', `Welcome to Nexela, ${fullName}! Your account has been securely verified.`);
+    addNotification('Account Created', `Welcome to Nexela Saver, ${fullName}! Your account has been securely verified.`);
     return newUser;
   };
 

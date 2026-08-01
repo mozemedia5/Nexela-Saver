@@ -114,7 +114,7 @@ export const SupportChat: React.FC = () => {
             <div className="flex items-center space-x-2">
               <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
               <div>
-                <h3 className="text-sm font-bold tracking-wide">Nexela Live Support</h3>
+                <h3 className="text-sm font-bold tracking-wide">Nexela Saver Live Support</h3>
                 <p className="text-[10px] text-blue-100 font-medium">Real-time SaaS Helper Inbox</p>
               </div>
             </div>
@@ -308,7 +308,7 @@ export const SupportChat: React.FC = () => {
 
           {/* Quick FAQ footer inside widget */}
           <div className="border-t border-slate-100 bg-slate-50/50 p-2.5 text-center text-[10px] text-slate-400 font-medium">
-            Powered by Nexela SaaS Engine • Secure End-to-End Encryption
+            Powered by Nexela Saver SaaS Engine • Secure End-to-End Encryption
           </div>
         </div>
       )}

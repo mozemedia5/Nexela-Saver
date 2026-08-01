@@ -207,9 +207,9 @@ function App() {
             <div className="text-center space-y-2">
               <div className="inline-flex items-center space-x-1.5 bg-blue-50 px-3 py-1 rounded-full text-[10px] font-black text-blue-600 uppercase tracking-widest border border-blue-100">
                 <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-                <span>Nexela Multi-Tenant SaaS</span>
+                <span>Nexela Saver Multi-Tenant SaaS</span>
               </div>
-              <h1 className="text-3xl font-black text-slate-800 tracking-tight leading-none pt-2">Nexela</h1>
+              <h1 className="text-3xl font-black text-slate-800 tracking-tight leading-none pt-2">Nexela Saver</h1>
               <p className="text-xs text-slate-500 max-w-xs mx-auto">
                 Secure multi-tenant savings cooperative cloud platform by Liverton. Build financial resilience together.
               </p>
@@ -357,7 +357,7 @@ function App() {
           </div>
 
           <p className="text-[10px] text-slate-400 mt-8 font-medium">
-            Nexela Cooperative Services • Powered securely via Cloudinary, Chart.js & Vercel Edge.
+            Nexela Saver Cooperative Services • Powered securely via Cloudinary, Chart.js & Vercel Edge.
           </p>
         </div>
       ) : (
@@ -377,7 +377,7 @@ function App() {
                   N
                 </div>
                 <div>
-                  <h1 className="text-lg font-black tracking-tight text-white leading-none">Nexela</h1>
+                  <h1 className="text-lg font-black tracking-tight text-white leading-none">Nexela Saver</h1>
                   <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">by Liverton</span>
                 </div>
               </div>
@@ -480,7 +480,7 @@ function App() {
                 <h2 className="text-sm font-bold tracking-tight text-slate-800 hidden md:block">
                   {activeScreen === 'dashboard' ? 'Multi-Tenant Management Console' : 'Audit Reports Exporting Suite'}
                 </h2>
-                <div className="md:hidden font-black text-blue-600 text-lg">Nexela PWA</div>
+                <div className="md:hidden font-black text-blue-600 text-lg">Nexela Saver PWA</div>
               </div>
 
               {/* Actions Header widgets */}
@@ -705,7 +705,7 @@ function App() {
                       <div className="w-8 h-8 rounded-xl bg-blue-600 flex items-center justify-center font-black text-white text-base">
                         N
                       </div>
-                      <h1 className="text-lg font-black tracking-tight text-white leading-none">Nexela</h1>
+                      <h1 className="text-lg font-black tracking-tight text-white leading-none">Nexela Saver</h1>
                     </div>
                     <button onClick={() => setMobileMenuOpen(false)} className="text-slate-400 hover:text-white">
                       <X className="w-5 h-5" />
