@@ -279,7 +279,7 @@ export const PRE_SEEDED_ANNOUNCEMENTS: Announcement[] = [
     id: 'a1',
     groupId: 'g1',
     title: 'Quarterly Audit Review Next Week',
-    content: 'All members, please make sure your saving records and payment slips are updated in Nexela by Wednesday. Our internal audit committee will review all transactions on Saturday morning.',
+    content: 'All members, please make sure your saving records and payment slips are updated in Nexela Saver by Wednesday. Our internal audit committee will review all transactions on Saturday morning.',
     createdAt: '2026-07-28T08:00:00Z',
     createdBy: 'Jane Doe'
   },
@@ -298,7 +298,7 @@ export const PRE_SEEDED_BANNERS: AppBanner[] = [
   {
     id: 'b1',
     imageUrl: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=1200',
-    title: 'Save Smart, Grow Together: Welcome to Nexela PWA by Liverton.',
+    title: 'Save Smart, Grow Together: Welcome to Nexela Saver PWA by Liverton.',
     target: 'Learn Savings',
     active: true
   },

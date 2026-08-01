@@ -113,7 +113,7 @@ export const SuperAdminDashboard: React.FC = () => {
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>Platform Owner Control Hub</span>
           </div>
-          <h2 className="text-2xl font-black tracking-tight">Nexela System Administration</h2>
+          <h2 className="text-2xl font-black tracking-tight">Nexela Saver System Administration</h2>
           <p className="text-slate-300 text-xs font-medium max-w-xl">
             You have full control over independent savings groups, subscription status, global banner displays, live support tickets, and live developer audit logs.
           </p>
@@ -195,7 +195,7 @@ export const SuperAdminDashboard: React.FC = () => {
           {/* SaaS Core Premium Charts */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="neo-card p-1">
-              <CustomChart type="bar" data={groupGrowthData} title="Nexela Platform SaaS Group Enrollment Trends (2026)" />
+              <CustomChart type="bar" data={groupGrowthData} title="Nexela Saver Platform SaaS Group Enrollment Trends (2026)" />
             </div>
             <div className="neo-card p-1">
               <CustomChart type="line" data={revenueData} title="Platform Monthly Recurring Revenue Growth Forecast ($)" />
@@ -213,7 +213,7 @@ export const SuperAdminDashboard: React.FC = () => {
                   { name: 'Firebase Authenticator', status: 'Optimal (99.99%)', ok: true },
                   { name: 'Cloud Firestore Simulator', status: 'Synchronized', ok: true },
                   { name: 'Cloudinary Image Pipeline', status: 'Online (Secure)', ok: true },
-                  { name: 'Nexela Multi-Tenant Gateway', status: 'Broadcasting Active', ok: true }
+                  { name: 'Nexela Saver Multi-Tenant Gateway', status: 'Broadcasting Active', ok: true }
                 ].map((s, i) => (
                   <div key={i} className="flex items-center justify-between text-xs">
                     <span className="text-slate-600 font-medium">{s.name}</span>
@@ -516,7 +516,7 @@ export const SuperAdminDashboard: React.FC = () => {
                   required
                   value={newBannerTitle}
                   onChange={(e) => setNewBannerTitle(e.target.value)}
-                  placeholder="e.g. Save Smart with Nexela Liverton"
+                  placeholder="e.g. Save Smart with Nexela Saver Liverton"
                   className="neo-input w-full px-3.5 py-2 text-xs"
                 />
               </div>
@@ -622,7 +622,7 @@ export const SuperAdminDashboard: React.FC = () => {
       {/* SaaS CONFIGURATION TAB */}
       {activeTab === 'settings' && (
         <div className="neo-card p-6 max-w-xl space-y-4">
-          <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider">Nexela Subscription Settings</h3>
+          <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider">Nexela Saver Subscription Settings</h3>
           <p className="text-xs text-slate-500">Manage payment settings, support thresholds, and Cloudinary API quotas.</p>
 
           <div className="space-y-3 pt-2 text-xs">

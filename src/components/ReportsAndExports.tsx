@@ -15,13 +15,13 @@ export const ReportsAndExports: React.FC = () => {
   const handleExport = (format: 'PDF' | 'Excel' | 'CSV', reportName: string, headers: string[], rows: any[][]) => {
     // Generate actual file text contents
     let content = '';
-    let filename = `Nexela_${reportName.replace(/\s+/g, '_')}_${filterType}.${format.toLowerCase()}`;
+    let filename = `NexelaSaver_${reportName.replace(/\s+/g, '_')}_${filterType}.${format.toLowerCase()}`;
 
     if (format === 'CSV') {
       content = [headers.join(','), ...rows.map(r => r.map(cell => `"${cell}"`).join(','))].join('\n');
     } else {
       // Simulate fully custom spreadsheet XML/TXT or structured layout
-      content = `--- Nexela Premium Report: ${reportName} ---\n`;
+      content = `--- Nexela Saver Premium Report: ${reportName} ---\n`;
       content += `Generated on: ${new Date().toLocaleDateString()}\n`;
       content += `Filter Category: ${filterType}\n`;
       content += `Group: ${activeGroup?.name || 'All Savings Groups'}\n\n`;
